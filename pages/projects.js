@@ -34,23 +34,14 @@ function Projects({ contentfulData }) {
                 <div className='myUnderline'></div>
 
                 {/* ------------------------------------------------ */}
-
-
-
                 {/* ------------------------------------------------ */}
 
                 <div className='my-grid xl:grid-cols-3 '>
 
 
-
-
+                    {/* giving /components/Project data from contentful  */}
                     {projects.map(p => (
                         <Project key={p.id} title={p.title} image={p.pImage.url} description={p.description} skills={p.skills} githubLink={p.githubLink} projectLink={p.projectlink} />
-
-
-
-
-                        // <Project key={p.id} title={p.title} image={p.pImage.description} description={p.description} skills={p.skills} githubLink={p.githubLink} projectLink = {p.projectlink}/>
 
                     ))}
                 </div>
@@ -69,12 +60,11 @@ export async function getStaticProps() {
 
 
     // .fetch(`https://graphql.contentful.com/content/v1/spaces/${space}/`, {
-
     const res = await fetch(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            // Authenticate the request
+    
             Authorization: bearer,
         },
         // send the GraphQL query

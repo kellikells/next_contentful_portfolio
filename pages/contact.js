@@ -12,7 +12,7 @@ const Contact = () => (
 
             <div className='my-grid-contact'>
 
-                {/* left side  */}
+                {/* left col (unless mobile) */}
                 <div className='md:justify-items-end'>
                     <Image
                         src='/avatar.jpg'
@@ -22,7 +22,7 @@ const Contact = () => (
                 </div>
 
 
-                {/* right side */}
+                {/* right side (unless mobile)*/}
                 <div className='text-center text-lg  '>
 
                     <div className='uppercase ' >

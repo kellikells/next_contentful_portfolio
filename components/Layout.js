@@ -10,7 +10,7 @@ const Layout = (props) => (
 
         {/* <body className='bg-gray-100'> */}
             {/* <body> */}
-            <div className='container mx-auto flex flex-col min-h-screen'>
+            <div className='mx-auto flex flex-col min-h-screen'>
 
                 <header className='border-b-2 border-solid border-opacity-25 border-orange-600'>
                     <Navbar />

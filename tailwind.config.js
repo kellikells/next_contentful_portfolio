@@ -12,11 +12,11 @@ module.exports = {
       'sm': '320px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '640px',
+      'md': '500px',
       // => @media (min-width: 640px) { ... }
 
       // ipad
-      'lg': '768px',
+      'lg': '640px',
       // => @media (min-width: 768px) { ... }
 
       'xl': '1024px',
