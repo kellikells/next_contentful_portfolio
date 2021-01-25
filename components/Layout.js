@@ -10,14 +10,14 @@ const Layout = (props) => (
 
         {/* <body className='bg-gray-100'> */}
             {/* <body> */}
-            <div className='mx-auto flex flex-col min-h-screen'>
+        <div className='container mx-auto flex flex-col min-h-screen flex-grow sm:w-full md:w-4/5 lg:w-3/4'>
 
                 <header className='border-b-2 border-solid border-opacity-25 border-orange-600'>
                     <Navbar />
                 </header>
 
                 {/* <main className='flex-grow l:w-3/4 md:w-4/5 s:w-full '> */}
-                <main>
+                <main className=''>
                     {props.children}
                 </main>
 

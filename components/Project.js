@@ -20,10 +20,6 @@ export default function Project(props) {
                         alt='user dashboard'
                         layout='fill'
                         object-fit='fill'
-                    // object-fit='cover'
-                    // object-fit='contain'
-                    // object-fit='none'
-                    // object-fit='scale-down'
                     />
                 </div>
 
