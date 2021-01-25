@@ -1,0 +1,121 @@
+/* This is imported in '/pages/_app.js' */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+body {
+     font-family: "Ubuntu", sans-serif;
+}
+
+main {
+     /* font-family: 'Quattrocento', serif; */
+     font-family: "Karla", sans-serif;
+}
+
+.f-ubuntu {
+     font-family: "Ubuntu", sans-serif;
+}
+
+.f-montserrat {
+     font-family: "Montserrat", sans-serif;
+}
+
+.f-raleway {
+     font-family: "Raleway", sans-serif;
+}
+
+.test {
+     font-family: 'Quattrocento', serif;
+}
+
+@layer components {
+     .Logo {
+          @apply tracking-wide md:tracking-widest  p-2 space-x-10 hover:bg-yellow-300 rounded-full text-black font-bold;
+     }
+
+     .NavbarLink {
+          @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500 hover:underline;
+     }
+     .NavbarLink:active {
+          @apply underline text-black;
+     }
+     /* ---------------------------------------------- */
+
+     .FooterLink {
+          @apply w-10 h-10 p-2;
+     }
+     .FooterLink--linkedin {
+          @apply hover:bg-blue-600 rounded-full;
+     }
+     .FooterLink--gmail {
+          @apply hover:bg-red-400 rounded-full;
+     }
+     .FooterLink--github {
+          @apply hover:bg-gray-500 rounded-full;
+     }
+}
+
+/* ---------------------------------------------- */
+
+.page-header {
+     @apply text-center text-xl md:text-4xl font-black tracking-widest;
+}
+.myUnderline {
+     @apply mx-auto w-20 block h-2.5 border-solid border-t-4  border-black mt-4;
+}
+
+/* ---------------------------------------------- */
+.my-grid {
+     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 my-24 py-6 justify-items-center;
+}
+/* ---------------------------------------------- */
+.my-grid-contact {
+     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-24 py-6 justify-items-center;
+}
+/* ---------------------------------------------- */
+
+.project-section {
+     @apply container relative w-96 h-72 md:w-80 md:h-64 shadow-xl border-4 items-center justify-center mx-auto;
+}
+/* ---------------------------------------------- */
+.project-title {
+     @apply text-center font-bold text-xl my-2 text-gray-400;
+}
+/* ---------------------------------------------- */
+.project-hidden {
+     @apply overflow-hidden absolute inset-0 opacity-0 bg-white text-center items-center justify-center  z-10  min-h-full py-4 px-6 flex flex-col;
+}
+/* ---------------------------------------------- */
+.project-title-hidden {
+     @apply text-center font-bold text-lg text-black f-raleway uppercase;
+}
+.project-title-myUnderline {
+     @apply mx-auto w-10 block h-2.5 border-solid border-t-2  border-black mt-1;
+}
+/* ---------------------------------------------- */
+.project-skill-section {
+     @apply text-pink-600 uppercase p-2 w-max mx-auto text-xs flex-row mt-3;
+}
+/* ---------------------------------------------- */
+.project-description {
+     @apply tracking-tight;
+}
+/* ---------------------------------------------- */
+.project-link {
+     @apply text-black;
+}
+/* ---------------------------------------------- */
+.icons-section {
+     @apply fill-current p-2 grid grid-flow-col gap-x-1 w-max mx-auto;
+}
+.icons {
+     @apply w-4 h-4 md:w-6 md:h-6;
+}
+/* ---------------------------------------------- */
