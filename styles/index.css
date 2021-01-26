@@ -37,11 +37,11 @@ main {
 
 @layer components {
      .Logo {
-          @apply tracking-wide md:tracking-widest  p-2 space-x-10 hover:bg-yellow-300 rounded-full text-black font-bold;
+          @apply tracking-wide md:tracking-widest  p-2 space-x-10 hover:text-shadow-xl rounded-full text-black font-bold;
      }
 
      .NavbarLink {
-          @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500 hover:underline;
+          @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500  hover:text-shadow-xl;
      }
      /* .NavbarLink:active {
           @apply underline text-black;
@@ -65,7 +65,7 @@ main {
 /* ---------------------------------------------- */
 
 .page-header {
-     @apply text-center text-2xl sm:text-3xl md:text-4xl font-black tracking-widest;
+     @apply text-center text-2xl sm:text-3xl md:text-4xl font-black tracking-widest text-shadow-lg;
 }
 .myUnderline {
      @apply mx-auto w-20 block h-2.5 border-solid border-t-4  border-black mt-4;
@@ -77,7 +77,7 @@ main {
 }
 /* ---------------------------------------------- */
 .my-grid-contact {
-     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-16  justify-items-center;
+     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-16 justify-items-center items-center ;
 }
 /* ---------------------------------------------- */
 
@@ -94,7 +94,7 @@ main {
 }
 /* ---------------------------------------------- */
 .project-title-hidden {
-     @apply text-center font-bold text-lg text-black f-raleway uppercase;
+     @apply text-center font-bold text-lg text-black f-raleway uppercase ;
 }
 .project-title-myUnderline {
      @apply mx-auto w-10 block h-2.5 border-solid border-t-2  border-black mt-1;
@@ -111,6 +111,7 @@ main {
 .project-link {
      @apply text-black;
 }
+
 /* ---------------------------------------------- */
 .icons-section {
      @apply fill-current p-2 grid grid-flow-col gap-x-1 w-max mx-auto;
