@@ -28,21 +28,18 @@ function Projects({ contentfulData }) {
     return (
 
         <Layout>
-            <div className='mx-auto mt-16'>
+            <div className='mx-auto mt-8 sm:mt-16'>
 
                 <div className='page-header f-raleway'>PROJECTS</div>
                 <div className='myUnderline'></div>
 
                 {/* ------------------------------------------------ */}
-                {/* ------------------------------------------------ */}
-
+             
                 <div className='my-grid xl:grid-cols-3 '>
-
 
                     {/* giving /components/Project data from contentful  */}
                     {projects.map(p => (
                         <Project key={p.id} title={p.title} image={p.pImage.url} description={p.description} skills={p.skills} githubLink={p.githubLink} projectLink={p.projectlink} />
-
                     ))}
                 </div>
             </div>

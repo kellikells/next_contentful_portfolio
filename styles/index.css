@@ -73,16 +73,16 @@ main {
 
 /* ---------------------------------------------- */
 .my-grid {
-     @apply  mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 my-24 py-6 justify-items-center;
+     @apply mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 sm:my-24 py-6 justify-items-center;
 }
 /* ---------------------------------------------- */
 .my-grid-contact {
-     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-24 py-6 justify-items-center;
+     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 sm:my-24 py-6 justify-items-center;
 }
 /* ---------------------------------------------- */
 
 .project-section {
-     @apply container block relative w-96 h-72 md:w-80 md:h-64 shadow-xl border-4 items-center justify-center mx-auto;
+     @apply container block relative lg:w-96 lg:h-72 w-80 h-64 shadow-xl border-4 items-center justify-center mx-auto;
 }
 /* ---------------------------------------------- */
 .project-title {

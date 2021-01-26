@@ -43,9 +43,9 @@ export default function Project(props) {
                     </div>
                 </div>
             </div>
+            
             {/* hover:zoom effect  */}
             <style jsx>{`
-
 .project-hidden
 {
     display:inline-block;

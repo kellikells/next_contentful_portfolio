@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Contact = () => (
     // <div className='min-h-screen'>
     <Layout>
-        <div className='mx-auto mt-16'>
+        <div className='mx-auto mt-8 sm:mt-16'>
 
             <div className='page-header f-raleway'>CONTACT </div>
             <div className='myUnderline'></div>
@@ -21,49 +21,44 @@ const Contact = () => (
                         height={150} />
                 </div>
 
-
+                {/* -------------------------------------- */}
                 {/* right side (unless mobile)*/}
                 <div className='text-center text-lg  '>
 
-                    <div className='uppercase ' >
-                            KelliKells@gmail.com 
+                    {/* gmail */}
+                    <div>
+                        <div>Email</div>
+                        <a href='mailto: kellikells@gmail.com' target='_blank'>kellikells@gmail.com</a>
                     </div>
 
                     {/* linkedin  */}
-                    <div className='FooterLink FooterLink--linkedin'>
-                        <a href='https://www.linkedin.com/in/kelli-uyeda/' target='_blank'>
-                            <img src='/linkedin.svg' alt='linkedin' />
-                        </a>
-                    </div>
-
-                    {/* gmail */}
-                    <div className='FooterLink FooterLink--gmail'>
-                        <a href='mailto: kellikells@gmail.com' target='_blank'>
-                            <img src='/gmail.svg' alt='gmail' />
-                        </a>
+                    <div>
+                        <div>Linkedin</div>
+                        <a href='https://www.linkedin.com/in/kelli-uyeda/' target='_blank'>linkedin.com/in/kelli-uyeda</a>
                     </div>
 
                     {/* github */}
-                    <div className='FooterLink FooterLink--github'>
-                        <a href='https://github.com/kellikells' target='_blank'>
-                            <img src='/github.svg' alt='github' />
-                        </a>
+                    <div>
+                        <div>GitHub</div>
+                        <a href='https://github.com/kellikells' target='_blank'>github.com/kellikells</a>
                     </div>
 
 
-                    <div >
-                        <a href='mailto: KelliKells@gmail.com'>Default Mail Program</a><img className='inline-block mb-2 ml-2 w-4' src='/mail.svg' alt='copy' />
-                    </div>
 
+                    {/* <div >
+                        <a href='mailto: KelliKells@gmail.com'>
+                            <img className='inline-block mb-2 ml-2 w-4' src='/mail.svg' alt='copy' />
+                            Default Mail Program
+                            </a>
+
+                    </div> */}
                 </div>
-
-
-
-
-
-
-
             </div>
+
+
+            <style jsx>{`
+
+`}</style>
         </div>
     </Layout>
 );

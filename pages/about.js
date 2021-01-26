@@ -1,7 +1,7 @@
 
 const About = () => (
 
-        <div className='mt-16 px-5 md:my-32 flex flex-col flex-wrap space-y-16 md:space-y-0 patterns'>
+        <div className='mt-8 sm:mt-16 px-5 md:my-32 flex flex-col flex-wrap space-y-16 md:space-y-0 patterns'>
                 <div className='mb-auto md:space-y-5 md:grid grid-cols-2'>
                         <div>
                                 <h1 className='text-8xl '><span>Hi, I'm </span><span className='font-bold'>Kelli.</span></h1> <br />
