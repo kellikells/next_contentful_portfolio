@@ -10,18 +10,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
-body {
+/* body {
      font-family: "Ubuntu", sans-serif;
-}
+} */
 
 main {
      /* font-family: 'Quattrocento', serif; */
      font-family: "Karla", sans-serif;
 }
-
+/* 
 .f-ubuntu {
      font-family: "Ubuntu", sans-serif;
-}
+} */
 
 .f-montserrat {
      font-family: "Montserrat", sans-serif;
@@ -43,9 +43,9 @@ main {
      .NavbarLink {
           @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500 hover:underline;
      }
-     .NavbarLink:active {
+     /* .NavbarLink:active {
           @apply underline text-black;
-     }
+     } */
      /* ---------------------------------------------- */
 
      .FooterLink {
@@ -65,7 +65,7 @@ main {
 /* ---------------------------------------------- */
 
 .page-header {
-     @apply text-center text-xl md:text-4xl font-black tracking-widest;
+     @apply text-center text-2xl sm:text-3xl md:text-4xl font-black tracking-widest;
 }
 .myUnderline {
      @apply mx-auto w-20 block h-2.5 border-solid border-t-4  border-black mt-4;
@@ -73,11 +73,11 @@ main {
 
 /* ---------------------------------------------- */
 .my-grid {
-     @apply mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 sm:my-24 py-6 justify-items-center;
+     @apply mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 my-16 justify-items-center;
 }
 /* ---------------------------------------------- */
 .my-grid-contact {
-     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 sm:my-24 py-6 justify-items-center;
+     @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-16  justify-items-center;
 }
 /* ---------------------------------------------- */
 
@@ -118,4 +118,13 @@ main {
 .icons {
      @apply w-4 h-4 md:w-6 md:h-6;
 }
+/* ---------------------------------------------- */
+.contact-links {
+     @apply my-5;
+}
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
 /* ---------------------------------------------- */

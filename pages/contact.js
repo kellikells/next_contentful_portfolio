@@ -26,19 +26,19 @@ const Contact = () => (
                 <div className='text-center text-lg  '>
 
                     {/* gmail */}
-                    <div>
+                    <div className='contact-links'>
                         <div>Email</div>
                         <a href='mailto: kellikells@gmail.com' target='_blank'>kellikells@gmail.com</a>
                     </div>
 
                     {/* linkedin  */}
-                    <div>
+                    <div className='contact-links'>
                         <div>Linkedin</div>
                         <a href='https://www.linkedin.com/in/kelli-uyeda/' target='_blank'>linkedin.com/in/kelli-uyeda</a>
                     </div>
 
                     {/* github */}
-                    <div>
+                    <div className='contact-links'>
                         <div>GitHub</div>
                         <a href='https://github.com/kellikells' target='_blank'>github.com/kellikells</a>
                     </div>
