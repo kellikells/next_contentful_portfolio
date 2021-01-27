@@ -28,6 +28,8 @@ export default function Project(props) {
                     <h1 className='project-title-hidden'>{props.title}</h1>
                     <div className='project-title-myUnderline'></div>
 
+
+
                     {/* skills */}
                     <span className='project-skill-section '>
                         {props.skills}
@@ -37,13 +39,27 @@ export default function Project(props) {
                     <p className='project-description'>{props.description} </p>
 
                     {/* links  */}
-                    <div className='icons-section'>
-                        <Link href={props.githubLink} ><a target='_blank'><img className='icons' src='/github.svg' alt='github' /></a></Link>
-                        <Link href={props.projectLink}><a target='_blank'><img className='icons' src='/external-link.svg' alt='external-link' /></a></Link>
+                    <div className='project-link-section'>
+
+                        {/* <div className='project-link'>
+                            <Link href={props.projectLink}><a target='_blank'>View<img className='project-link-icon mr-1' src='/external-link.svg' alt='external-link' /></a></Link>
+                        </div> */}
+                        <div className='project-link'>
+                            <Link href={props.projectLink}><a target='_blank'><img className='project-link-icon mr-2' src='/external-link.svg' alt='external-link' />View</a></Link>
+                        </div>
+
+                        <div className='project-link'>
+                    
+
+
+                            <Link href={props.githubLink} ><a target='_blank'><img className='project-link-icon mr-2' src='/github.svg' alt='github' />GitHub</a></Link>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
-            
+
             {/* hover:zoom effect  */}
             <style jsx>{`
 .project-hidden

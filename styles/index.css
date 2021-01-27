@@ -97,11 +97,11 @@ main {
      @apply text-center font-bold text-lg text-black f-raleway uppercase ;
 }
 .project-title-myUnderline {
-     @apply mx-auto w-10 block h-2.5 border-solid border-t-2  border-black mt-1;
+     @apply mx-auto w-10 block h-2.5 border-solid border-t-2  border-black mt-1 mb-2;
 }
 /* ---------------------------------------------- */
 .project-skill-section {
-     @apply text-pink-600 uppercase p-2 w-max mx-auto text-xs flex-row mt-3;
+     @apply text-pink-600 uppercase p-2 w-max mx-auto text-sm flex-row mt-3 font-bold;
 }
 /* ---------------------------------------------- */
 .project-description {
@@ -113,12 +113,19 @@ main {
 }
 
 /* ---------------------------------------------- */
-.icons-section {
-     @apply fill-current p-2 grid grid-flow-col gap-x-1 w-max mx-auto;
+
+.project-link-section {
+     @apply flex flex-row items-center justify-between mt-6;
 }
-.icons {
-     @apply w-4 h-4 md:w-6 md:h-6;
+
+.project-link {
+     @apply  border-2 border-gray-300 hover:bg-yellow-300 hover:border-transparent py-1 px-1 rounded-lg inline-flex items-center;
 }
+
+.project-link-icon {
+     @apply inline w-3 h-3 md:w-6 md:h-6 ;
+}
+
 /* ---------------------------------------------- */
 .contact-links {
      @apply my-5;
