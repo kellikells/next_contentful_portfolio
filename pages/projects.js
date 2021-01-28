@@ -47,7 +47,6 @@ function Projects({ contentfulData }) {
     );
 };
 
-
 // get data from contentful 
 export async function getStaticProps() {
     const SPACE = process.env.NEXT_PUBLIC_SPACE;
@@ -55,20 +54,17 @@ export async function getStaticProps() {
     const AUTH = process.env.NEXT_PUBLIC_AUTHORIZATION;
     var bearer = 'Bearer ' + AUTH;
 
-
-    // .fetch(`https://graphql.contentful.com/content/v1/spaces/${space}/`, {
     const res = await fetch(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-    
+
             Authorization: bearer,
         },
         // send the GraphQL query
         body: JSON.stringify({ query }),
     })
     const contentfulData = await res.json();
-
     return {
         props: {
             contentfulData,

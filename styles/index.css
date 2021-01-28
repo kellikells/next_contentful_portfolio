@@ -4,61 +4,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
-/* body {
-     font-family: "Ubuntu", sans-serif;
-} */
-
 main {
-     /* font-family: 'Quattrocento', serif; */
      font-family: "Karla", sans-serif;
 }
-/* 
 .f-ubuntu {
      font-family: "Ubuntu", sans-serif;
-} */
-
-.f-montserrat {
-     font-family: "Montserrat", sans-serif;
 }
-
 .f-raleway {
      font-family: "Raleway", sans-serif;
 }
-
-.test {
+.f-quattrocento {
      font-family: 'Quattrocento', serif;
 }
 
+
 @layer components {
      .Logo {
-          @apply tracking-wide md:tracking-widest  p-2 space-x-10 hover:text-shadow-xl rounded-full text-black font-bold;
+          @apply tracking-wide md:tracking-widest  p-2 space-x-10  rounded-full text-black font-bold hover:text-shadow-xl ;
      }
 
      .NavbarLink {
-          @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500  hover:text-shadow-xl;
+          @apply md:tracking-widest p-2 space-x-10 rounded-full text-gray-500  hover:text-shadow-xl  ;
      }
-     /* .NavbarLink:active {
-          @apply underline text-black;
-     } */
+
      /* ---------------------------------------------- */
 
      .FooterLink {
-          @apply w-10 h-10 p-2;
+          @apply w-10 h-10 p-2 rounded-full;
      }
      .FooterLink--linkedin {
-          @apply hover:bg-blue-600 rounded-full;
+          @apply text-blue-400;
      }
      .FooterLink--gmail {
-          @apply hover:bg-red-400 rounded-full;
+          @apply text-red-400;
      }
      .FooterLink--github {
-          @apply hover:bg-gray-500 rounded-full;
+          @apply text-gray-500;
      }
 }
 
@@ -73,16 +59,15 @@ main {
 
 /* ---------------------------------------------- */
 .my-grid {
-     @apply mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3 my-16 justify-items-center;
+     @apply gap-7 my-16 grid grid-cols-1 md:grid-cols-2  2xl:grid-cols-3;
 }
 /* ---------------------------------------------- */
 .my-grid-contact {
      @apply max-w-max mx-auto grid grid-cols-1 gap-7 md:grid-cols-2 my-16 justify-items-center items-center ;
 }
 /* ---------------------------------------------- */
-
 .project-section {
-     @apply container block relative lg:w-96 lg:h-72 w-80 h-64 shadow-xl border-4 items-center justify-center mx-auto;
+     @apply container block relative shadow-xl border-4 items-center justify-center w-80 h-64 2xl:w-96 2xl:h-72;
 }
 /* ---------------------------------------------- */
 .project-title {
@@ -90,7 +75,7 @@ main {
 }
 /* ---------------------------------------------- */
 .project-hidden {
-     @apply overflow-hidden absolute inset-0 opacity-0 bg-white text-center items-center justify-center  z-10  min-h-full py-4 px-6 flex flex-col;
+     @apply overflow-hidden absolute inset-0 opacity-0 bg-white text-center items-center justify-center z-10  min-h-full py-4 px-6 flex flex-col;
 }
 /* ---------------------------------------------- */
 .project-title-hidden {
@@ -105,30 +90,23 @@ main {
 }
 /* ---------------------------------------------- */
 .project-description {
-     @apply tracking-tight;
+     @apply tracking-tight f-ubuntu;
 }
-/* ---------------------------------------------- */
-.project-link {
-     @apply text-black;
-}
-
 /* ---------------------------------------------- */
 
 .project-link-section {
      @apply flex flex-row items-center justify-between mt-6;
 }
-
 .project-link {
-     @apply  border-2 border-gray-300 hover:bg-yellow-300 hover:border-transparent py-1 px-1 rounded-lg inline-flex items-center;
+     @apply  text-black text-xs md:text-sm border-2 border-gray-300 py-1 px-1 rounded-lg inline-flex items-center hover:bg-yellow-300 hover:border-transparent ;
 }
-
 .project-link-icon {
-     @apply inline w-3 h-3 md:w-6 md:h-6 ;
+     @apply inline w-3 h-3 md:w-5 md:h-5 ;
 }
 
 /* ---------------------------------------------- */
 .contact-links {
-     @apply my-5;
+     @apply my-5 f-ubuntu;
 }
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */

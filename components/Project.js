@@ -1,11 +1,7 @@
-
-
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Project(props) {
-
-
     return (
 
         <div className='group project-section'>
@@ -15,7 +11,6 @@ export default function Project(props) {
                 {/* thumbnail image */}
                 <div className='group-hover:opacity-50'>
                     <Image
-                        // src='/p-ud-1.png'
                         src={props.image}
                         alt='user dashboard'
                         layout='fill'
@@ -41,9 +36,7 @@ export default function Project(props) {
                     {/* links  */}
                     <div className='project-link-section'>
 
-                        {/* <div className='project-link'>
-                            <Link href={props.projectLink}><a target='_blank'>View<img className='project-link-icon mr-1' src='/external-link.svg' alt='external-link' /></a></Link>
-                        </div> */}
+           
                         <div className='project-link'>
                             <Link href={props.projectLink}><a target='_blank'><img className='project-link-icon mr-2' src='/external-link.svg' alt='external-link' />View</a></Link>
                         </div>
