@@ -11,9 +11,6 @@ const query = `
         }
     }
 }`
-// https://graphql.contentful.com/content/v1/spaces/0frjeeepy2ks/explore?access_token=Bl7WqERqgPl8ST8boxBqC5Xbhjk_nXNUvby15Gx4d0o
-
-
 
 
 function Contact({ contentfulData }) {
@@ -76,21 +73,15 @@ export async function getStaticProps() {
     const url = 'https://graphql.contentful.com/content/v1/spaces/' + SPACE + '/';
     const AUTH = process.env.NEXT_PUBLIC_AUTHORIZATION;
     var bearer = 'Bearer ' + AUTH;
-
-
-    // .fetch(`https://graphql.contentful.com/content/v1/spaces/${space}/`, {
     const res = await fetch(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-
             Authorization: bearer,
         },
-        // send the GraphQL query
         body: JSON.stringify({ query }),
     })
     const contentfulData = await res.json();
-
     return {
         props: {
             contentfulData,

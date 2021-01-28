@@ -8,7 +8,7 @@ const About = () => (
 
                                 <br />
                           
-                                <h3 className='text-3xl tracking-widest font-bold text-gray-600 my-10 md:my-5  lg:text-center text-shadow-lg'>A Full-Stack Web Developer</h3>         
+                                <h3 className='text-3xl tracking-widest font-bold text-gray-600 my-10 md:my-5  text-shadow-lg'>A Full-Stack Web Developer</h3>         
                         </div>
 
                         <div className='lg:ml-10'>

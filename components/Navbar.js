@@ -18,8 +18,8 @@ export default function Navbar(props) {
                 <li className='NavbarLink'><Link href='/projects'><a>Projects</a></Link></li>
                 <li className='NavbarLink'><Link href='/contact'><a>Contact</a></Link></li>
                 {/* <li className='NavbarLink'><a href={props.myResume} target='_blank' >Resume</a></li> */}
-                <li className='NavbarLink'><Link href={props.myResume}><a href={props.myResume} target='_blank' >Resume</a></Link></li>
-                {/* <li className='NavbarLink'><Link href='/Resume.pdf' ><a target='_blank' >Resume</a></Link></li> */}
+                {/* <li className='NavbarLink'><Link href={props.myResume}><a href={props.myResume} target='_blank' >Resume</a></Link></li> */}
+                <li className='NavbarLink'><Link href='/Resume.pdf' ><a target='_blank' >Resume</a></Link></li>
             </ul>
 
         </div>
