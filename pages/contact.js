@@ -38,27 +38,58 @@ function Contact({ contentfulData }) {
 
                     {/* -------------------------------------- */}
                     {/* right side (unless mobile)*/}
-                    <div className='text-center text-lg  '>
+                    <table >
+
 
                         {/* gmail */}
-                        <div className='contact-links'>
-                            <div>Email</div>
+                        <tr className='Contact-links'>
+                            <a href='mailto: kellikells@gmail.com' target='_blank'>
+                                <td className='pr-4'><img src='/gmail-icon.png
+                                ' alt='gmail' /></td>
+                                <td>kellikells@gmail.com</td>
+                            </a>
+                        </tr>
+
+                        {/* linkedin */}
+                        <tr className='Contact-links'>
+                            <a href='https://www.linkedin.com/in/kelli-uyeda/' target='_blank'>
+                                <td className='pr-4'><img src='/linkedin-icon.png
+                                ' alt='linkedin' /></td>
+                                <td>linkedin.com/in/kelli-uyeda</td>
+                            </a>
+                        </tr>
+
+
+                        {/* github */}
+                        <tr className='Contact-links'>
+
+                            <a href='https://github.com/kellikells' target='_blank'>
+                                <td className='pr-4'><img src='/github-icon.png
+                                ' alt='github' /></td>
+                                <td>github.com/kellikells</td>
+                            </a>
+                        </tr>
+
+
+                        {/* <div className='contact-links'>
+                            <div>Email Address</div>
+                     
+
                             <a href='mailto: kellikells@gmail.com' target='_blank'>kellikells@gmail.com</a>
                         </div>
 
-                        {/* linkedin  */}
+                      
                         <div className='contact-links'>
                             <div>Linkedin</div>
                             <a href='https://www.linkedin.com/in/kelli-uyeda/' target='_blank'>linkedin.com/in/kelli-uyeda</a>
                         </div>
 
-                        {/* github */}
                         <div className='contact-links'>
                             <div>GitHub</div>
                             <a href='https://github.com/kellikells' target='_blank'>github.com/kellikells</a>
-                        </div>
+                        </div> */}
 
-                    </div>
+                    </table>
                 </div>
             </div>
         </Layout>
