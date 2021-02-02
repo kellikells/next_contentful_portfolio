@@ -6,6 +6,7 @@ const Layout = (props) => (
     <>
         <Head>
             <title>K.Uyeda - Web Developer</title>
+            <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
         </Head>
 
 
