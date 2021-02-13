@@ -24,7 +24,6 @@ export default function Project(props) {
                     <div className='project-title-myUnderline'></div>
 
 
-
                     {/* skills */}
                     <span className='project-skill-section '>
                         {props.skills}

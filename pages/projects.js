@@ -29,12 +29,10 @@ function Projects({ contentfulData }) {
 
         <Layout>
             <div className='mx-auto mt-8 sm:mt-16'>
-
                 <div className='page-header f-raleway'>PROJECTS</div>
                 <div className='myUnderline'></div>
 
                 {/* ------------------------------------------------ */}
-             
                 <div className='my-grid xl:grid-cols-3 '>
 
                     {/* giving /components/Project data from contentful  */}
@@ -49,6 +47,11 @@ function Projects({ contentfulData }) {
 
 // get data from contentful 
 export async function getStaticProps() {
+
+    // first, grab our Contentful keys from the .env file
+    // const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
+    // const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+
     const SPACE = process.env.NEXT_PUBLIC_SPACE;
     const url = 'https://graphql.contentful.com/content/v1/spaces/' + SPACE + '/';
     const AUTH = process.env.NEXT_PUBLIC_AUTHORIZATION;
